@@ -1,0 +1,154 @@
+:root {
+    --cor-principal: #004a91;
+    --cor-fundo: #f4f4f4;
+    --cor-card: #ffffff;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+header nav button {
+    background-color: var(--cor-card);
+    color: var(--cor-principal);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilos para Formulários e Cards */
+.tela {
+    background-color: var(--cor-card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--cor-sombra);
+    margin-bottom: 20px;
+}
+
+.tela h2 {
+    margin-top: 0;
+    color: var(--cor-principal);
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="number"],
+.form-grupo input[type="date"],
+.form-grupo select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-grupo-checkbox label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+button.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para os cards dos pontos de descarte */
+#lista-pontos-cadastrados {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.card-ponto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card-ponto h3 {
+    margin-top: 0;
+    color: var(--cor-principal);
+}
+
+/* Estilo para a tabela de histórico */
+.tabela-historico {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-historico th,
+.tabela-historico td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-historico th {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+.tabela-historico tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para a lista do relatório */
+.lista-relatorio {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-relatorio li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.lista-relatorio li strong {
+    color: var(--cor-principal);
+}

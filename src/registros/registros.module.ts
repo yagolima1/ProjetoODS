@@ -6,7 +6,6 @@ import { RegistroDescarteSchema } from './registro.schema';
 
 @Module({
   imports: [
-    // 3. ESSA É A LINHA QUE FALTAVA (ou estava errada):
     MongooseModule.forFeature([{ name: 'RegistroDescarte', schema: RegistroDescarteSchema }]),
   ],
   controllers: [RegistrosController],
